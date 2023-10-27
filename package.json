@@ -1,0 +1,23 @@
+{
+  "name": "chip8ts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "bun build frontend --outdir=build --watch",
+    "build": "bun build frontend --outdir=build",
+    "serve": "bun run serve.ts",
+    "dev": "bunx npm-run-all --parallel watch serve test:watch",
+    "test": "bun test",
+    "test:watch":"bun test --watch --coverage"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@stricjs/router": "^5.0.6",
+    "@stricjs/utils": "^1.6.1"
+  }
+}

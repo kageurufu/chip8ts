@@ -1,0 +1,4 @@
+[test]
+preload = ['./tests/setup.ts']
+coverageSkipTestFiles = true
+# coverageThreshold = 0.9 # to require 90% line-level and function-level coverage
