@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <div style="display: inline-block">
+      <canvas id="chip8--canvas" width="640" height="320"></canvas>
+    </div>
+    <div style="display: inline-block">
+      <h3>Settings</h3>
+      <p>
+        <label>
+          Quirks Mode:
+          <select id="quirksMode">
+            <option value="Chip8">Chip8</option>
+            <option value="SuperChip">SuperChip</option>
+            <option value="XOChip">XO-Chip</option>
+          </select>
+        </label>
+      </p>
+
+      <h3>Controls:</h3>
+      <table style="font-family: monospace" border="1px">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>q</td>
+          <td>w</td>
+          <td>e</td>
+          <td>r</td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>s</td>
+          <td>d</td>
+          <td>f</td>
+        </tr>
+        <tr>
+          <td>z</td>
+          <td>x</td>
+          <td>c</td>
+          <td>v</td>
+        </tr>
+      </table>
+
+      <p>
+        <code>t</code> to reset<br />
+        <code>j</code> steps through the code<br />
+        <code>k</code> disables stepping<br />
+      </p>
+
+      <select id="chip8--selector">
+        <option disabled selected>Select a Program</option>
+      </select>
+    </div>
+
+    <pre id="chip8--debug"></pre>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
